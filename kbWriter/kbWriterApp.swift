@@ -1,10 +1,3 @@
-//
-//  kbWriterApp.swift
-//  kbWriter
-//
-//  Created by Graham Hall on 10/16/23.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -12,7 +5,7 @@ import SwiftData
 struct kbWriterApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Document.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

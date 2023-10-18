@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32D63482ADDFF1D00CFE22C /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32D63472ADDFF1D00CFE22C /* EditView.swift */; };
+		D32D634B2ADE0DA000CFE22C /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = D32D634A2ADE0DA000CFE22C /* CodeEditor */; };
 		D38CD33C2ADDA60600914FA0 /* kbWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CD33B2ADDA60600914FA0 /* kbWriterApp.swift */; };
 		D38CD33E2ADDA60600914FA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CD33D2ADDA60600914FA0 /* ContentView.swift */; };
-		D38CD3402ADDA60600914FA0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CD33F2ADDA60600914FA0 /* Item.swift */; };
+		D38CD3402ADDA60600914FA0 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CD33F2ADDA60600914FA0 /* Document.swift */; };
 		D38CD3422ADDA60700914FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38CD3412ADDA60700914FA0 /* Assets.xcassets */; };
 		D38CD3452ADDA60700914FA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38CD3442ADDA60700914FA0 /* Preview Assets.xcassets */; };
+		D38CD34F2ADDA77C00914FA0 /* KanbanColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38CD34E2ADDA77C00914FA0 /* KanbanColumn.swift */; };
+		D3FDFF262ADEF1D5004C5CF3 /* exportMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDFF252ADEF1D5004C5CF3 /* exportMarkdown.swift */; };
+		D3FDFF282ADEF33A004C5CF3 /* blogTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDFF272ADEF33A004C5CF3 /* blogTags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32D63472ADDFF1D00CFE22C /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		D36059B22ADEDEA90046E97F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D38CD3382ADDA60600914FA0 /* kbWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kbWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38CD33B2ADDA60600914FA0 /* kbWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kbWriterApp.swift; sourceTree = "<group>"; };
 		D38CD33D2ADDA60600914FA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D38CD33F2ADDA60600914FA0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D38CD33F2ADDA60600914FA0 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		D38CD3412ADDA60700914FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D38CD3442ADDA60700914FA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D38CD3462ADDA60700914FA0 /* kbWriter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kbWriter.entitlements; sourceTree = "<group>"; };
+		D38CD34E2ADDA77C00914FA0 /* KanbanColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanColumn.swift; sourceTree = "<group>"; };
+		D3FDFF252ADEF1D5004C5CF3 /* exportMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportMarkdown.swift; sourceTree = "<group>"; };
+		D3FDFF272ADEF33A004C5CF3 /* blogTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogTags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32D634B2ADE0DA000CFE22C /* CodeEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,7 @@
 		D38CD32F2ADDA60600914FA0 = {
 			isa = PBXGroup;
 			children = (
+				D36059B22ADEDEA90046E97F /* README.md */,
 				D38CD33A2ADDA60600914FA0 /* kbWriter */,
 				D38CD3392ADDA60600914FA0 /* Products */,
 			);
@@ -54,9 +66,10 @@
 		D38CD33A2ADDA60600914FA0 /* kbWriter */ = {
 			isa = PBXGroup;
 			children = (
+				D3FDFF292ADEF38A004C5CF3 /* Utils */,
 				D38CD33B2ADDA60600914FA0 /* kbWriterApp.swift */,
-				D38CD33D2ADDA60600914FA0 /* ContentView.swift */,
-				D38CD33F2ADDA60600914FA0 /* Item.swift */,
+				D38CD34C2ADDA66900914FA0 /* Views */,
+				D38CD34D2ADDA68B00914FA0 /* Models */,
 				D38CD3412ADDA60700914FA0 /* Assets.xcassets */,
 				D38CD3462ADDA60700914FA0 /* kbWriter.entitlements */,
 				D38CD3432ADDA60700914FA0 /* Preview Content */,
@@ -70,6 +83,33 @@
 				D38CD3442ADDA60700914FA0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D38CD34C2ADDA66900914FA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D38CD33D2ADDA60600914FA0 /* ContentView.swift */,
+				D38CD34E2ADDA77C00914FA0 /* KanbanColumn.swift */,
+				D32D63472ADDFF1D00CFE22C /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D38CD34D2ADDA68B00914FA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D38CD33F2ADDA60600914FA0 /* Document.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3FDFF292ADEF38A004C5CF3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D3FDFF252ADEF1D5004C5CF3 /* exportMarkdown.swift */,
+				D3FDFF272ADEF33A004C5CF3 /* blogTags.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +128,9 @@
 			dependencies = (
 			);
 			name = kbWriter;
+			packageProductDependencies = (
+				D32D634A2ADE0DA000CFE22C /* CodeEditor */,
+			);
 			productName = kbWriter;
 			productReference = D38CD3382ADDA60600914FA0 /* kbWriter.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +159,9 @@
 				Base,
 			);
 			mainGroup = D38CD32F2ADDA60600914FA0;
+			packageReferences = (
+				D32D63492ADE0DA000CFE22C /* XCRemoteSwiftPackageReference "CodeEditor" */,
+			);
 			productRefGroup = D38CD3392ADDA60600914FA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,7 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38CD33E2ADDA60600914FA0 /* ContentView.swift in Sources */,
-				D38CD3402ADDA60600914FA0 /* Item.swift in Sources */,
+				D32D63482ADDFF1D00CFE22C /* EditView.swift in Sources */,
+				D38CD3402ADDA60600914FA0 /* Document.swift in Sources */,
+				D38CD34F2ADDA77C00914FA0 /* KanbanColumn.swift in Sources */,
+				D3FDFF262ADEF1D5004C5CF3 /* exportMarkdown.swift in Sources */,
+				D3FDFF282ADEF33A004C5CF3 /* blogTags.swift in Sources */,
 				D38CD33C2ADDA60600914FA0 /* kbWriterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +235,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -248,6 +299,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -278,11 +330,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"kbWriter/Preview Content\"";
 				DEVELOPMENT_TEAM = B3DFV278UN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = kbWriter;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,8 +347,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghalldev.kbWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 6;
 			};
 			name = Debug;
 		};
@@ -306,11 +364,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"kbWriter/Preview Content\"";
 				DEVELOPMENT_TEAM = B3DFV278UN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = kbWriter;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,8 +381,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghalldev.kbWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 6;
 			};
 			name = Release;
 		};
@@ -347,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D32D63492ADE0DA000CFE22C /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D32D634A2ADE0DA000CFE22C /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32D63492ADE0DA000CFE22C /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D38CD3302ADDA60600914FA0 /* Project object */;
 }
