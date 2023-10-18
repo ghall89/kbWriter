@@ -30,6 +30,7 @@
 		D38CD3442ADDA60700914FA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D38CD3462ADDA60700914FA0 /* kbWriter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kbWriter.entitlements; sourceTree = "<group>"; };
 		D38CD34E2ADDA77C00914FA0 /* KanbanColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanColumn.swift; sourceTree = "<group>"; };
+		D3FB27CF2ADF6AA000F576AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D3FDFF252ADEF1D5004C5CF3 /* exportMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportMarkdown.swift; sourceTree = "<group>"; };
 		D3FDFF272ADEF33A004C5CF3 /* blogTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogTags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +67,7 @@
 		D38CD33A2ADDA60600914FA0 /* kbWriter */ = {
 			isa = PBXGroup;
 			children = (
+				D3FB27CF2ADF6AA000F576AB /* Info.plist */,
 				D3FDFF292ADEF38A004C5CF3 /* Utils */,
 				D38CD33B2ADDA60600914FA0 /* kbWriterApp.swift */,
 				D38CD34C2ADDA66900914FA0 /* Views */,
@@ -336,6 +338,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kbWriter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = kbWriter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -370,6 +373,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kbWriter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = kbWriter;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

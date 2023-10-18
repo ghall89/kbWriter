@@ -50,9 +50,9 @@ struct EditView: View {
 				Image(systemName: "calendar")
 			})
 			Button(action: {
-				
+				exportMarkdown(document)
 			}, label: {
-				Image(systemName: "square.and.arrow.up")
+				Image(systemName: "square.and.arrow.down")
 			})
 		}
 		.sheet(isPresented: $showDatePicker, content: {
@@ -61,8 +61,8 @@ struct EditView: View {
 				selection: $document.timestamp,
 				displayedComponents: [.date]
 			)
-				.datePickerStyle(.graphical)
-				.padding()
+			.datePickerStyle(.graphical)
+			.padding()
 		})
 	}
 }
